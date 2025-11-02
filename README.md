@@ -1,6 +1,6 @@
-# 💧 BluBlue – Water Resistance Awareness App
+# 💧 BluBlu – Water Resistance Awareness App
 
-**BluBlue** adalah aplikasi edukatif berbasis **Flutter + Firebase** yang bertujuan untuk meningkatkan kesadaran masyarakat akan pentingnya menjaga sumber daya air.  
+**BluBlu** adalah aplikasi edukatif berbasis **Flutter + Firebase** yang bertujuan untuk meningkatkan kesadaran masyarakat akan pentingnya menjaga sumber daya air.  
 Aplikasi ini juga mengedepankan nilai **Sustainable Development Goals (SDG 6: Clean Water and Sanitation)** 🌍
 
 ---
