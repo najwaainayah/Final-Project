@@ -1,16 +1,17 @@
-# flutter_blublu
 
-A new Flutter project.
+=======
+# 💧 BluBlu – Water Resistance Awareness App
 
-## Getting Started
+**BluBlu** adalah aplikasi edukatif berbasis **Flutter + Firebase** yang bertujuan untuk meningkatkan kesadaran masyarakat akan pentingnya menjaga sumber daya air.  
+Aplikasi ini juga mengedepankan nilai **Sustainable Development Goals (SDG 6: Clean Water and Sanitation)** 🌍
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Features
+- 🔐 **Firebase Authentication** – login & register pengguna dengan aman.
+- 💦 **Water Education Page** – informasi interaktif seputar konservasi air.
+- 🌱 **Eco Challenge Tracker** – fitur sederhana untuk mencatat aktivitas peduli lingkungan.
+- 🧭 **Navigation Menu (6 pages)** – mudah dijelajahi, setiap halaman berisi 10+ widget UI.
+- ☁️ **Firebase Integration** – data tersimpan di cloud, real-time, dan aman.
+- 📱 **Responsive Design** – tampil baik di berbagai ukuran layar.
+>>>>>>> f7588d0a0567e73aefcfc4b39613f4eb99003f47
