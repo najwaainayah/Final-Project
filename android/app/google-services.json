@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "378871858515",
+    "project_id": "blublu-fb773",
+    "storage_bucket": "blublu-fb773.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378871858515:android:cca9e2317335467acc4da6",
+        "android_client_info": {
+          "package_name": "com.example.flutter_blublu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl5DEXjZB2bsWwd_Cjdt_Ig-0GnaIc9tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
