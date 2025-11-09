@@ -1,3 +1,4 @@
+// lib/pages/about_page.dart
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
@@ -5,20 +6,22 @@ class AboutPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // widgets: Column, Text, SizedBox, Card x3, ElevatedButton
     return Scaffold(
-      appBar: AppBar(title: const Text('Tentang BluBlue')),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("🌊 BluBlue App", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-            SizedBox(height: 12),
-            Text("Aplikasi edukasi untuk meningkatkan kesadaran akan pentingnya air bersih."),
-            SizedBox(height: 12),
-            Text("Dibuat oleh mahasiswa dengan tujuan mendukung SDG 6: Clean Water and Sanitation."),
-          ],
-        ),
+      appBar: AppBar(title: const Text('About BluBlue')),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(children: [
+          const Text('BluBlue', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 8),
+          const Text('An educational app to raise awareness about water and SDG 6.'),
+          const SizedBox(height: 12),
+          Card(child: Padding(padding: const EdgeInsets.all(10), child: Column(children: const [Text('Goal'), SizedBox(height:4), Text('Promote water conservation')] ))),
+          Card(child: Padding(padding: const EdgeInsets.all(10), child: Column(children: const [Text('Audience'), SizedBox(height:4), Text('Students & community')] ))),
+          Card(child: Padding(padding: const EdgeInsets.all(10), child: Column(children: const [Text('Tech'), SizedBox(height:4), Text('Flutter + Firebase')] ))),
+          const SizedBox(height: 12),
+          ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text('Back'))
+        ]),
       ),
     );
   }

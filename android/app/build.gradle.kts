@@ -1,9 +1,7 @@
 plugins {
     id("com.android.application")
-    id("kotlin-android")
-    // Flutter Gradle plugin (wajib setelah Android dan Kotlin)
+    id("org.jetbrains.kotlin.android")
     id("dev.flutter.flutter-gradle-plugin")
-    // Plugin Google Services buat Firebase
     id("com.google.gms.google-services")
 }
 
@@ -12,22 +10,22 @@ android {
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
-    }
-
     defaultConfig {
         applicationId = "com.example.flutter_blublu"
-        minSdk = 23 // wajib minimal 23 buat Firebase baru
+        minSdk = 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-        multiDexEnabled = true // penting buat mencegah limit 64K methods
+        multiDexEnabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 
     buildTypes {
@@ -42,12 +40,9 @@ flutter {
 }
 
 dependencies {
-    // Firebase BOM (biar versi antar Firebase sync otomatis)
-    implementation platform("com.google.firebase:firebase-bom:33.1.2")
-
-    // Core Firebase (wajib untuk inisialisasi)
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation("com.google.firebase:firebase-analytics")
-
-    // MultiDex (penting banget buat mencegah build crash di project besar)
     implementation("androidx.multidex:multidex:2.0.1")
 }
+
+apply(plugin = "com.google.gms.google-services")
