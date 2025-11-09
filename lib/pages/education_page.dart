@@ -1,24 +1,25 @@
-// lib/pages/tips_page.dart
+// lib/pages/education_page.dart
 import 'package:flutter/material.dart';
 
-class TipsPage extends StatelessWidget {
-  const TipsPage({super.key});
+class EducationPage extends StatelessWidget {
+  const EducationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // widgets >=5: Column, Padding, ListTile x5
+    // widgets >=5: ListView, Padding, Text, Card x3, ElevatedButton
     return Scaffold(
-      appBar: AppBar(title: const Text('Tips to Save Water')),
-      body: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(children: const [
-          ListTile(leading: Icon(Icons.shower), title: Text('Quick showers'), subtitle: Text('Keep it under 5 minutes')),
-          ListTile(leading: Icon(Icons.kitchen), title: Text('Reuse water'), subtitle: Text('Use leftover washing water for plants')),
-          ListTile(leading: Icon(Icons.plumbing), title: Text('Fix leaks'), subtitle: Text('Small drips waste lots of water')),
-          ListTile(leading: Icon(Icons.local_drink), title: Text('Efficient appliances'), subtitle: Text('Use water-efficient devices')),
-          ListTile(leading: Icon(Icons.check), title: Text('Be mindful'), subtitle: Text('Turn off tap when not in use')),
-        ]),
-      ),
+      appBar: AppBar(title: const Text('Education')),
+      body: ListView(padding: const EdgeInsets.all(12), children: [
+        const Text('Why Water Matters', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 8),
+        const Text('Clean water is essential for health, agriculture and ecosystems.'),
+        const SizedBox(height: 12),
+        Card(child: ListTile(title: const Text('SDG 6'), subtitle: const Text('Ensure availability and sustainable management of water.'))),
+        Card(child: ListTile(title: const Text('Contamination'), subtitle: const Text('How pollution affects communities.'))),
+        Card(child: ListTile(title: const Text('Conservation'), subtitle: const Text('Practical ways to save water'))),
+        const SizedBox(height: 12),
+        ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text('Back'))
+      ]),
     );
   }
 }

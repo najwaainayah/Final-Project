@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'home_page.dart'; // ganti dengan nama file home page kamu ya
+import 'home_page.dart'; 
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
