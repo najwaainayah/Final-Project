@@ -59,6 +59,6 @@ BluBlu juga berkontribusi pada SDG 6 dengan:
 
 ## 👩🏻‍💻 Developer
 
-**Sonya Law**
+**Najwa Ainayah**
 Flutter Developer | SDG-Focused Mobile Application
 >>>>>>> f7588d0a0567e73aefcfc4b39613f4eb99003f47
